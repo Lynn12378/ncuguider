@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'ncuguider'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F3DD4B16AF2F48608294D5D01CAD8A3D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_39469F9224694C89952E899F04E7E238 }}
