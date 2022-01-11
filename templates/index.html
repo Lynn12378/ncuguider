@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    首頁
+{% endblock %}
+
+{% block message %}
+<body background="../static/pictures/index1.jpg">
+    <div class=" d-flex h-100 text-center text-dark">  
+        <div class="container-fluid">
+            <main class="d-flex vh-100 align-items-center text-white justify-content-center">
+                <div class="lead ">
+                    <p class="display-4">校園導覽</p>
+                    <p>加入好友即可使用校園導覽，上傳圖片分析植物種類，並獲得相關資訊</p>
+                    <p class="lead">
+                        <a  class="btn btn-lg btn-dark fw-bold border-dark" style="background-color: olivedrab" href="#jumbotron">了解更多</a>
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="container" id="jumbotron">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h2>
+                    關於我們
+                    <img src="../static/pictures/index2.jpg" class="float-end justify-content-center d-block" height="330px" width="500px" alt="無法顯示">
+                </h2>
+                <p>指導教授:張家凱</p>
+                <p>指導助教:羅暉棠</p>
+                <p>課程:AI人工智慧導論</p>
+                <p>組別:三</p>
+                <p>成員:鄭凱心、呂采蓁、楊薇蓉、王瑛莉</p>
+                
+            </div>
+                
+        </div>
+
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-dark bg-light rounded-3 border">
+                    <h2>中央大學官網</h2>
+                    <a class="contain-fluid" role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img class="img-fluid w-100" src="../static/pictures/歡迎蒞臨國立中央大學(電腦版)壓縮_20211025043546_0.jpg">
+                    </a>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">即將離開網頁</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    確定前往中央大學官網嗎?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                                    <a role="button" class="btn btn-success" href="https://www.ncu.edu.tw/tw/index.html">前往</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><hr>點擊圖片了解更多關於中央大學的資訊</p>
+                </div>
+                
+            </div>
+        
+            <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2>參考網站</h2>
+                    <a class="contain-fluid" role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <img class="img-fluid w-100" src="../static/pictures/下載.png">
+                    </a>
+
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">即將離開網頁</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    確定前往Bootstrap嗎?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                                    <a role="button" class="btn btn-dark" href="https://getbootstrap.com/">前往</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><hr>點擊圖片前往Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock message %}
