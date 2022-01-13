@@ -1,50 +1,44 @@
 {% extends 'base.html' %}
 {% block title%}使用介紹{% endblock title%}
 {% block message %}
-<link href="../static/css/product.css" rel="stylesheet" type="text/css">
+<link href="../static/css/product.css" rel="stylesheet">
 
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center text-white pt-3" style="background-color:rgb(184, 184, 184);">
-  <div class="col-md-5 p-lg-5 mx-auto my-5">
-    <h1 class="display-4 fw-normal">上傳照片</h1>
-    <p class="lead fw-normal">
-        聊天機器人將會回傳植物名稱及相關資訊
-    </p>
-    <a class="btn btn-outline-light" href="#method">使用方式</a>
-  </div>
-  <div class="product-device shadow-sm d-none d-md-block"></div>
-  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">上傳照片</h1>
+      <p class="lead fw-normal">
+          聊天機器人將會回傳植物名稱及相關資訊
+      </p>
+      <a class="btn btn-outline-secondary" href="#method">使用方式</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 <hr>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center" id="method">
-  <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-    <div class="my-3 py-3">
-      <h2 class="display-5 ">請確保花朵位於圖片中央</h2>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 " id="method">
+    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">請確保花朵位於圖片中央</h2>
         <p class="lead">
           正確的圖片
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#check"/></svg>
         </p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto product-t" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-    <div class="bg-light shadow-sm" style="width: 60%; height: 400px; border-radius: 21px 21px 0 0;">
-      <img src="../static/pictures/scant.jpg" class="mt-3" style="width: 280px; height: 388px; border-radius: 5px 5px 0 0;">
-    </div>
-  </div>
-
-  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 p-3">
-      <h2 class="display-5">請確保花朵位於圖片中央</h2>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">請確保花朵位於圖片中央</h2>
         <p class="lead">
           錯誤的圖片
+          <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#X"/></svg>
         </p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto product-w" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-    <div class="bg-dark shadow-sm" style="width: 60%; height: 400px; border-radius: 21px 21px 0 0;">
-      <img src="../static/pictures/scant.jpg" class="mt-3" style="width: 280px; height: 388px; border-radius: 5px 5px 0 0;">
-    </div>
-  </div>
 </div>
-
-
 <hr>
-<div class="d-flex h-100 text-center flower">
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light  flower">
   <div class="col-md-5 p-lg-5 mx-auto my-5  bg-dark">
     <h1 class="display-4 fw-normal text-white">目前可以辨識的植物種類</h1>
     <p class="lead fw-normal text-white">
@@ -64,7 +58,7 @@
             確定前往前往圖片集嗎?
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
             <a role="button" class="btn btn-success" href="/picture/1">前往</a>
           </div>
         </div>
@@ -76,21 +70,21 @@
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light members" >
   <div class="col-md-5 p-lg-5 mx-auto my-5">
     <h1 class="display-4 fw-normal">關於我們</h1>
-    <a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1" href="/carousel">
+    <a class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" href="/carousel">
       成員介紹
     </a>
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel1">即將離開網頁</h5>
+            <h5 class="modal-title" id="exampleModalLabel">即將離開網頁</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             確定前往前往成員介紹嗎?
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
             <a role="button" class="btn btn-success" href="/carousel">前往</a>
           </div>
         </div>
