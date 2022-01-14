@@ -2,28 +2,6 @@
   max-width: 960px;
 }
 
-/*
- * Custom translucent site header
- */
-
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.site-header a {
-  color: #8e8e8e;
-  transition: color .15s ease-in-out;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
 .product-device {
   position: absolute;
   right: 10%;
@@ -64,64 +42,6 @@
   border-radius: 5px;
 }
 
-.product-t {
-  position: relative;
-  right: 10%;
-  bottom: 0%;
-  width: 300px;
-  height: 540px;
-  background-color: #e5e5e5;
-  border-radius: 21px;
-}
-.product-t::before {
-  position: absolute;
-  top: 6%;
-  right: 10px;
-  bottom: 0%;
-  left: 10px;
-  content: "";
-  background-image: url('../pictures/scant.jpg');
-  border-radius: 5px;
-}
-.product-w {
-  position: relative;
-  right: 10%;
-  bottom: 0%;
-  width: 300px;
-  height: 540px;
-  border-radius: 21px;
-  background-color: #333;
-}
-.product-w::before {
-  position: absolute;
-  top: 6%;
-  right: 10px;
-  bottom: 0%;
-  left: 10px;
-  content: "";
-  background-image: url('../pictures/scanw.jpg');
-  border-radius: 5px;
-}
-.flower{
-  right: 10%;
-  width: 1920px;
-  
-  background-image: url('../pictures/picture.png');
-}
-.members{
-  right: 10%;
-  width: 1920px;
-  
-  background-image: url('../pictures/members.png');
-}
-.blink {
-  animation-duration: 1s;
-  animation-name: blink;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
 
 /*
  * Extra utilities
@@ -130,8 +50,10 @@
 .flex-equal > * {
   flex: 1;
 }
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    flex: 1;
+
+@media screen and(min-width: 769px) {
+  .flex-equal > * {
+  flex: 1;
   }
+  
 }
