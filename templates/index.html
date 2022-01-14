@@ -3,15 +3,14 @@
 {% block title %}
     首頁
 {% endblock %}
-
 {% block message %}
-<body background="../static/pictures/index1.jpg">
-    <div class=" d-flex h-100 text-center text-dark">  
-        <div class="container-fluid">
-            <main class="d-flex vh-100 align-items-center text-white justify-content-center">
+
+    <div class="d-flex h-100 text-center indexbg">  
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <main class="d-flex vh-100 align-items-center justify-content-center">
                 <div class="lead ">
-                    <p class="display-4">校園導覽</p>
-                    <p>加入好友即可使用校園導覽，上傳圖片分析植物種類，並獲得相關資訊</p>
+                    <p class="display-1 text-white">校園導覽</p>
+                    <p class="text-white">加入好友即可使用校園導覽，上傳圖片分析植物種類，並獲得相關資訊</p>
                     <p class="lead">
                         <a  class="btn btn-lg btn-dark fw-bold border-dark" style="background-color: olivedrab" href="#jumbotron">了解更多</a>
                     </p>
@@ -24,16 +23,14 @@
             <div class="container-fluid py-5">
                 <h2>
                     關於我們
-                    <img src="../static/pictures/index2.jpg" class="float-end justify-content-center d-block" height="330px" width="500px" alt="無法顯示">
+                    <img src="../static/pictures/index2.jpg" class="float-end justify-content-end align-items-center d-block img-fluid" height="300px" width="500px" alt="無法顯示">
                 </h2>
                 <p>指導教授:張家凱</p>
                 <p>指導助教:羅暉棠</p>
                 <p>課程:AI人工智慧導論</p>
                 <p>組別:三</p>
                 <p>成員:鄭凱心、呂采蓁、楊薇蓉、王瑛莉</p>
-                
             </div>
-                
         </div>
 
         <div class="row align-items-md-stretch">
@@ -63,7 +60,6 @@
                     </div>
                     <p><hr>點擊圖片了解更多關於中央大學的資訊</p>
                 </div>
-                
             </div>
         
             <div class="col-md-6">
@@ -95,5 +91,4 @@
             </div>
         </div>
     </div>
-</body>
 {% endblock message %}
